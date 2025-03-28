@@ -95,7 +95,7 @@ function playGame() {
     for (let i = 0; i < 5; i++) {
         let humanChoice = prompt("Enter Rock, Paper, or Scissors:").toLowerCase();
         let choices = ["rock", "paper", "scissors"];
-        let computerChoice = choices[Math.floor(Math.random() * choices.length)];
+        let computerChoice = choices[Math.floor(Math.random() * 3)];
 
         console.log(`Round ${i + 1}:`);
         console.log(`You chose: ${humanChoice}`);
@@ -114,7 +114,7 @@ function playGame() {
     }
 }
 
-
+playGame();
 
 
 
